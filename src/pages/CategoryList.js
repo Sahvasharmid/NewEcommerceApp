@@ -16,7 +16,7 @@ const navigate=useNavigate()
 getProducts()
     },[slug])
     const getProducts = async () => {
-        const { data } = await axios.get(`https://cobalt-blue-scorpion-hose.cyclic.app/categories/${slug}`);
+        const { data } = await axios.get(`http://localhost:8080/categories/${slug}`);
         setProduct(data.products);
         setCategory(data.category);
         console.log(data);

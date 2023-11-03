@@ -12,7 +12,7 @@ const[answer,setanswer]=useState("")
     e.preventDefault()
       const data={email,newpassword,answer}
       try{
-    const response=  await axios.post("https://cobalt-blue-scorpion-hose.cyclic.app/forgotpassword",data)
+    const response=  await axios.post("http://localhost:8080/forgotpassword",data)
    
       if (response.status === 200) {
           

@@ -19,7 +19,7 @@ const UpdateProduct = () => {
   const getSingleProduct= async()=>{
   
       try{
-   const res=await axios.get(`https://cobalt-blue-scorpion-hose.cyclic.app/${params.slug}`)
+   const res=await axios.get(`http://localhost:8080/getsingleproduct/${params.slug}`)
    if(res.data.success){
     setName(res.data.singleProd.name)
     setDescription(res.data.singleProd.description)

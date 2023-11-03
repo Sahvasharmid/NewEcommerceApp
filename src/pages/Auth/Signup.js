@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-        const response = await axios.post("https://cobalt-blue-scorpion-hose.cyclic.app/register", { username, email, phoneno,password, address ,answer});
+        const response = await axios.post("http://localhost:8080/register", { username, email, phoneno,password, address ,answer});
         console.log("Response:", response);
         setUsername("");
         setEmail("");

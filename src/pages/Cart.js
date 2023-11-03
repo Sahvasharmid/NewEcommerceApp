@@ -59,7 +59,7 @@ const Cart = () => {
 {cart.map((item)=><>
 
   <div key={item._id} class="card m-2" style={{width:"18rem"}}>
-  <img src={`https://cobalt-blue-scorpion-hose.cyclic.app/getproductphoto/${item._id}`} class="card-img-top border"   style={{ width: "100%", height: "300px", objectFit: "contain" }}  alt={item.name}></img>
+  <img src={`http://localhost:8080/getproductphoto/${item._id}`} class="card-img-top border"   style={{ width: "100%", height: "300px", objectFit: "contain" }}  alt={item.name}></img>
   <div class="card-body">
     <h5 class="card-title">{item.name}</h5>
     <p class="card-text">{item.description.substring(0, 30)}...

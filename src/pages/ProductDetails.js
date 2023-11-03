@@ -18,7 +18,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `https://cobalt-blue-scorpion-hose.cyclic.app/${params.slug}`
+        `http://localhost:8080/getsingleproduct/${params.slug}`
       );
       setProduct(data.singleProd);
       getSimilarProduct(data.singleProd._id, data.singleProd.Category._id);

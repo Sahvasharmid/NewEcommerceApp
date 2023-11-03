@@ -9,7 +9,7 @@ const ProductList = () => {
 const[products,setProducts]=useState([])
 const getProducts=async()=>{
   try{
-  const res=await axios.get("https://cobalt-blue-scorpion-hose.cyclic.app/getallproducts")
+  const res=await axios.get("http://localhost:8080/getallproducts")
   if(res.data.success){
     console.log(res.data.getAllproducts)
     setProducts(res.data.getAllproducts)

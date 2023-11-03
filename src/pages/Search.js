@@ -17,7 +17,7 @@ const Search = () => {
             {values?.results.map((p) => (
               <div className="card m-2" style={{ width: "18rem" }}>
                 <img
-                  src={`https://cobalt-blue-scorpion-hose.cyclic.app/getproductphoto/${p._id}`}
+                  src={`http://localhost:8080/getproductphoto/${p._id}`}
                   className="card-img-top"
                   alt={p.name}
                   style={{ width: "100%", height: "300px", objectFit: "contain" }}

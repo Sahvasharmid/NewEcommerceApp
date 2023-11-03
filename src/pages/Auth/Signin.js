@@ -17,7 +17,7 @@ const [auth,setAuth]=useContext(AuthContextProvider)
       
         const data={email,password}
         try{
-      const response=  await axios.post("https://cobalt-blue-scorpion-hose.cyclic.app/login",data)
+      const response=  await axios.post("http://localhost:8080/login",data)
      
         if (response.status === 200) {
        

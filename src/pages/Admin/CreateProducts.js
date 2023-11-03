@@ -19,7 +19,7 @@ const CreateProducts = () => {
   const getAllCategory= async()=>{
   
       try{
-   const res=await axios.get("https://cobalt-blue-scorpion-hose.cyclic.app/getcategory")
+   const res=await axios.get("http://localhost:8080/getcategory")
    if (res.data.success) {
     setCategoryList(res.data.getCategory)
   }}

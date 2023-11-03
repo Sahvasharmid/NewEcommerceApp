@@ -25,7 +25,7 @@ const Profile = () => {
         e.preventDefault();
     
         try {
-            const {data} = await axios.put("https://cobalt-blue-scorpion-hose.cyclic.app/profile", { username, email, phoneno,password, address });
+            const {data} = await axios.put("http://localhost:8080/profile", { username, email, phoneno,password, address });
         
             setUsername("");
             setEmail("");

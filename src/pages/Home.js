@@ -22,7 +22,7 @@ const navigate=useNavigate()
     console.log("getProducts function called");
     try{
       setLoading(true)
-    const res=await axios.get(`https://cobalt-blue-scorpion-hose.cyclic.app/product/${page}`)
+    const res=await axios.get(`http://localhost:8080/product/${page}`)
     console.log("product:", products.length);  
     if(res.data.success){
       setLoading(false)
